@@ -13,7 +13,7 @@ RUN npm install
 # Install dependencies
 
 
-#RUN npm run build
+RUN npm run build
 
 COPY ./ ./
 # Copy the rest of the project over to the /app folder in the container
@@ -21,4 +21,4 @@ COPY ./ ./
 # The server listens at PORT 8080
 EXPOSE 8080
 
-CMD ["npm","start"],
+CMD ["npm","start:prod"],
